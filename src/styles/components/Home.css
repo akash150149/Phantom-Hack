@@ -1,0 +1,109 @@
+/* src/styles/components/Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height of the viewport */
+  position: relative; /* Ensure it stays within the boundaries */
+  background-color: transparent; /* The spooky background will take over */
+  color: #ff7518; /* Halloween orange for text */
+  font-family: 'Creepster', cursive; /* Use your spooky font */
+  overflow: hidden; /* Prevent scrollbars for animations */
+}
+
+
+/* Spooky Title */
+.spooky-title {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 117, 24, 0.8), 0 0 30px rgba(255, 117, 24, 0.5); /* Glowing effect */
+  margin-bottom: 50px;
+  opacity: 0; /* Start hidden, animation will reveal */
+}
+
+/* Floating Ghost */
+.floating-ghost {
+  position: relative;
+  width: 200px;
+  height: auto;
+  opacity: 0; /* Start hidden, animation will reveal */
+}
+
+/* Ghost Image */
+.floating-ghost img {
+  width: 100%;
+  animation: float 3s ease-in-out infinite; /* Infinite floating animation */
+}
+
+/* Keyframes for Ghost Float */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* src/styles/components/Home.css */
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #0a0a0a; /* Dark background */
+  color: #ff7518; /* Halloween orange text */
+  font-family: 'Creepster', cursive; /* Spooky font */
+}
+
+.spooky-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff7518;
+  text-shadow: 0 0 10px rgba(255, 117, 24, 0.8);
+}
+
+.spooky-paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.get-started-button {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background-color: #ff7518;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #ff5733; /* Slightly lighter orange */
+  box-shadow: 0 0 15px rgba(255, 117, 24, 0.8); /* Glowing effect */
+}
+
+/* src/styles/components/Home.css */
+.bat-container {
+  position: absolute;
+  top: 20%; /* Adjust based on your layout */
+  left: 0;
+}
+
+.bat {
+  width: 100px;
+  height: auto;
+  filter: brightness(0.8);
+  animation: bat-flap 0.5s ease-in-out infinite;
+}
+
+@keyframes bat-flap {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-10deg); }
+}

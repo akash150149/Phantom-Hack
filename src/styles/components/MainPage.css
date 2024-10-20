@@ -1,0 +1,54 @@
+/* src/styles/components/MainPage.css */
+
+.main-page {
+    background-color: #0a0a0a;
+    color: #ff7518;
+    font-family: 'Creepster', cursive;
+    height: 100vh;
+  }
+  
+  .spooky-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #121212;
+    padding: 15px;
+  }
+  
+  .spooky-navbar a {
+    color: #ff7518;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .spooky-navbar a:hover {
+    color: #fff;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .creepy-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .creepy-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .creepy-image {
+    width: 400px;
+    margin-top: 20px;
+  }
+  
+
+  body {
+    background: #1B2838;
+    color: #EEE;
+  }
+  

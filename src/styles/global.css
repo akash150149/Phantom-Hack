@@ -1,0 +1,71 @@
+/* src/styles/global.css */
+
+/* Apply spooky fonts and set the base styling */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Creepster', cursive; /* Spooky font */
+    background-color: #0a0a0a; /* Dark background color for eerie effect */
+    color: #ff7518; /* Halloween orange for text */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Add creepy background image for the entire page */
+body {
+    background: url('src/assets/images/creepy-background.png') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+}
+
+/* Set the spooky theme for headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #464242; /* Spooky red for headings */
+    text-shadow: 0 0 10px rgba(87, 82, 82, 0.8); /* Add glowing effect to headings */
+}
+
+/* Style links with a spooky glow */
+a {
+    color: #ff7518; /* Orange color for links */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #fff; /* White glow when hovered */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+/* Set spooky button styles */
+button, .btn {
+    background-color: #ff7518; /* Orange for buttons */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Creepster', cursive;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff1e00; /* Change to spooky red when hovered */
+    box-shadow: 0 0 10px rgba(255, 30, 0, 0.8);
+}
+
+/* Global container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center content */
+}
+
+/* Style paragraphs with a dark eerie tone */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff; /* White text for readability */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
