@@ -59,7 +59,7 @@
   justify-content: center;
   align-items: center;
   /* Adding background image */
-  background-image: url('src/assets/images/background-image.jpg');
+  background-image: url('public/assets/images/background-image.jpg');
   background-size: cover; /* Ensures the image covers the entire page */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling of the image */
