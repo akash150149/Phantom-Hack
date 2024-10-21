@@ -44,7 +44,7 @@ const Home = () => {
         <div className="home-container">
 
             <animated.div style={batSpring} className="bat-container">
-              <img src="/assets/bat.png" alt="Flying Bat" className="bat" />
+              {/* <img src="/assets/bat.png" alt="Flying Bat" className="bat" /> */}
             </animated.div>
 
             <animated.h1 style={spookyTextSpring} className="spooky-title">
@@ -64,7 +64,7 @@ const Home = () => {
             {/* Animated Get Started button */}
             <animated.div style={spookyButtonSpring}>
         <button onClick={handleGetStartedClick} className="get-started-button">
-          Get Started
+          Gate to Hell
         </button>
       </animated.div>
         </div>

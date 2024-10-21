@@ -52,3 +52,118 @@
     color: #EEE;
   }
   
+/* src/styles/components/MainPage.css */
+.main-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adding background image */
+  background-image: url('src/assets/images/background-image.png');
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  /* background-color: #1a1a1a; Fallback color */
+}
+
+.creepy-heading {
+  color: #ff7518;
+  font-family: 'Creepster', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.creepy-text {
+  color: #fff;
+  font-family: 'Creepster', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.get-started-btn {
+  background-color: #ff7518;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff4500;
+}
+
+/* Mist Effect */
+.mist-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Ensure mist doesn't block interaction */
+  z-index: 2; /* Place it over background but below text */
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, rgba(0,0,0,0) 100%);
+  opacity: 0.6; /* Adjust opacity for desired mist thickness */
+  animation: mist-movement 25s infinite linear; /* Continuous movement */
+}
+
+.mist-layer-2 {
+  animation: mist-movement-2 35s infinite linear; /* Different speed */
+  opacity: 0.4; /* Slightly fainter mist */
+}
+
+.mist-layer-3 {
+  animation: mist-movement-3 45s infinite linear; /* Slowest layer */
+  opacity: 0.3; /* Lightest mist */
+}
+
+/* Keyframes for mist movement */
+@keyframes mist-movement {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-40px) translateY(20px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes mist-movement-2 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(60px) translateY(-20px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes mist-movement-3 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-20px) translateY(30px); }
+  100% { transform: translateX(0); }
+}
+
+/* Basic page styling */
+.main-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 3; /* Ensure content is above mist */
+}
+
+.creepy-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  z-index: 3; /* Content is above mist */
+}
+
+.creepy-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  white-space: pre-wrap;
+}

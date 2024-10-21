@@ -1,5 +1,8 @@
 /* src/styles/components/Home.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -106,4 +109,123 @@
 @keyframes bat-flap {
   0%, 100% { transform: rotate(0deg); }
   50% { transform: rotate(-10deg); }
+}
+/* src/styles/components/Home.css */
+
+.home-container {
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw;  /* Full width of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('src/assets/images/creepy-background.png'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Make the background fixed when scrolling */
+}
+
+.spooky-title {
+  color: #ff7518;
+  font-family: 'Creepster', cursive;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px black; /* Adds a spooky shadow effect */
+}
+
+.spooky-paragraph {
+  color: white;
+  font-family: 'Creepster', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  text-shadow: 1px 1px 3px black; /* Adds a shadow effect to the text */
+}
+
+.get-started-button {
+  background-color: #ff7518;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  transform: scale(1.1);
+  background-color: #ff4500;
+}
+
+
+/* src/styles/components/Home.css */
+
+/* Set default spooky font globally in the home-container */
+.home-container {
+  height: 100vh; 
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('src/assets/images/creepy-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Creepster', cursive; /* Set Creepster as the default font */
+}
+
+/* Spooky Title */
+.spooky-title {
+  color: #ff7518;
+  font-family: 'Nosifer', cursive; /* Use Nosifer for extra spookiness */
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Dark, spooky shadow */
+  letter-spacing: 5px; /* Create spaced-out eerie lettering */
+  animation: glitch 2s infinite; /* Add a glitch effect (defined below) */
+}
+
+/* Paragraph Text */
+.spooky-paragraph {
+  color: white;
+  font-family: 'Creepster', cursive; /* Use Creepster here */
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  text-shadow: 1px 1px 3px black; 
+}
+
+/* Creepy Button */
+.get-started-button {
+  background-color: #ff7518;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Creepster', cursive; /* Add Creepster font to buttons */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  transform: scale(1.1);
+  background-color: #ff4500;
+  text-shadow: 2px 2px 5px black; /* Dark shadow on hover */
+}
+
+/* Glitch Animation for extra creepiness */
+@keyframes glitch {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(2deg, -2deg); }
+  40% { transform: skew(-2deg, 2deg); }
+  60% { transform: skew(1deg, -1deg); }
+  80% { transform: skew(-1deg, 1deg); }
+  100% { transform: skew(0deg); }
 }
