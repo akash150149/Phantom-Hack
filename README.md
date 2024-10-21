@@ -1,6 +1,6 @@
 Website Link: [phantom-hack.vercel.app](https://phantom-hack.vercel.app/)
 
-```markdown
+
 # 🎃 Spooky Halloween Website 🎃
 
 A spooky, atmospheric Halloween-themed website built using **React.js**, **React Spring**, and **React Spring Parallax** with animations, typewriter effects, and a chilling design to immerse users in a haunting experience. Perfect for the Halloween season, this website uses parallax scrolling, a typewriter text effect, and visual effects like mist and eerie fonts to enhance the spooky atmosphere.
@@ -87,7 +87,7 @@ src/
 │   └── MainPage.jsx
 ├── styles/
 │   ├── components/
-|   |   |──
+|   |   |── Home.css
 │   │   └── MainPage.css
 │   └── global.css
 ├── App.jsx
