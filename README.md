@@ -1,7 +1,6 @@
+Website Link: [phantom-hack.vercel.app](https://phantom-hack.vercel.app/)
 
-Website Link:[ phantom-hack.vercel.app](https://phantom-hack.vercel.app/)
-
-
+```markdown
 # 🎃 Spooky Halloween Website 🎃
 
 A spooky, atmospheric Halloween-themed website built using **React.js**, **React Spring**, and **React Spring Parallax** with animations, typewriter effects, and a chilling design to immerse users in a haunting experience. Perfect for the Halloween season, this website uses parallax scrolling, a typewriter text effect, and visual effects like mist and eerie fonts to enhance the spooky atmosphere.
@@ -80,32 +79,20 @@ Feel free to explore the different spooky sections!
 
 ## Project Structure
 
-plaintext
-Copy code
-halloween-spooky-website/
-├── public/
-│   ├── index.html              # Main HTML file for the website
-│   └── favicon.ico             # Favicon for the website
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   │   ├── creepy-background.png  # Spooky background image
-│   │   │   └── floating-ghost.png     # Image for the floating ghost
+```plaintext
+src/
+├
+├── components/
+|   |── Home.jsx
+│   └── MainPage.jsx
+├── styles/
 │   ├── components/
-│   │   └── MainPage.jsx         # Main page with React Spring Parallax and typewriter effect
-│   ├── styles/
-│   │   ├── components/
-│   │   │   └── MainPage.css     # CSS for the MainPage component
-│   │   └── mist.css             # CSS for mist effect
-│   │   └── global.css           # Global styles like fonts, colors, layout
-│   ├── App.jsx                  # Main React component
-│   └── index.js                 # Entry point for React
-├── package.json                 # Project dependencies and scripts
-├── package-lock.json            # Lock file for package versions
-├── README.md                    # Project README file
-├── .gitignore                   # Git ignore file
-└── node_modules/                # Installed Node.js packages
-
+|   |   |──
+│   │   └── MainPage.css
+│   └── global.css
+├── App.jsx
+├── index.js
+```
 
 - `MainPage.jsx`: The main page of the Halloween website, featuring the typewriter text effect, parallax layers, and spooky animations using **React Spring** and **React Spring Parallax**.
 - `MainPage.css`: Contains the styles for the main page, including custom CSS for animations and spooky effects.
