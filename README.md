@@ -1,3 +1,7 @@
+
+Website Link:
+
+
 # 🎃 Spooky Halloween Website 🎃
 
 A spooky, atmospheric Halloween-themed website built using **React.js**, **React Spring**, and **React Spring Parallax** with animations, typewriter effects, and a chilling design to immerse users in a haunting experience. Perfect for the Halloween season, this website uses parallax scrolling, a typewriter text effect, and visual effects like mist and eerie fonts to enhance the spooky atmosphere.
@@ -40,4 +44,97 @@ This project is designed to create a spooky and immersive web experience for Hal
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/halloween-spooky-website.git
+git clone https://github.com/akash150149/Phantom-Hack.git
+```
+
+### 2. Navigate to the project folder:
+
+```bash
+cd halloween-spooky-website
+```
+
+### 3. Install dependencies:
+
+```bash
+npm install
+```
+
+### 4. Start the development server:
+
+```bash
+npm start
+```
+
+The website will be available at `http://localhost:3000`.
+
+## Usage
+
+Once you start the development server, the website will load with a spooky Halloween-themed homepage. The main features include:
+
+1. **Typewriter Effect:** Watch as creepy text is revealed on the screen one character at a time.
+2. **Parallax Scrolling:** Scroll down the page to see layered content and eerie animations powered by **React Spring Parallax**.
+3. **Floating Ghost:** A spooky ghost image floats across the screen.
+4. **Mist Effect:** Enjoy a subtle, foggy mist that covers the screen, adding to the eerie ambiance.
+
+Feel free to explore the different spooky sections!
+
+## Project Structure
+
+`halloween-spooky-website/
+├── public/
+│   ├── index.html              # Main HTML file for the website
+│   └── favicon.ico             # Favicon for the website
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── creepy-background.png  # Spooky background image
+│   │   │   └── background-image.png     # Image for the floating ghost
+│   ├── components/
+|   |   |── Home.jsx
+│   │   └── MainPage.jsx         # Main page with React Spring Parallax and typewriter effect
+│   ├── styles/
+│   │   ├── components/
+|   |   |── |── Home.css
+│   │   │   └── MainPage.css     # CSS for the MainPage component
+│   │   └── mist.css             # CSS for mist effect
+│   │   └── global.css           # Global styles like fonts, colors, layout
+│   ├── App.jsx                  # Main React component
+│   └── index.js                 # Entry point for React
+├── package.json                 # Project dependencies and scripts
+├── package-lock.json            # Lock file for package versions
+├── README.md                    # Project README file
+├── .gitignore                   # Git ignore file
+└── node_modules/                # Installed Node.js packages
+
+
+- `MainPage.jsx`: The main page of the Halloween website, featuring the typewriter text effect, parallax layers, and spooky animations using **React Spring** and **React Spring Parallax**.
+- `MainPage.css`: Contains the styles for the main page, including custom CSS for animations and spooky effects.
+- `global.css`: Contains the global styles for fonts, colors, and general layout.
+
+## Technologies Used
+
+- **React.js**: Frontend framework used to build the application.
+- **React Spring**: A powerful animation library used to add fluid transitions and smooth animations.
+- **React Spring Parallax**: Extension of React Spring to create parallax scrolling effects.
+- **CSS Keyframes**: Used for animating the floating ghost and typewriter text effects.
+- **Google Fonts**: The "Creepster" font is used to enhance the creepy vibe.
+- **Custom CSS**: For mist effects, eerie colors, and animations.
+
+## Customization
+
+Feel free to customize the website according to your preferences:
+
+- **Background Images**: Replace the background image in the `src/assets/images/creepy-background.png` with your own spooky image.
+- **Fonts**: Change the fonts in `global.css` to fit different themes.
+- **Mist Effect**: The mist effect is customizable via CSS. Modify the `mist.css` file to adjust its intensity, speed, or color.
+
+## Contributing
+
+If you'd like to contribute to this spooky project, feel free to submit pull requests with improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+This version of the `README.md` highlights **React Spring** and **React Spring Parallax** as key technologies used in your project for animation and parallax effects.
