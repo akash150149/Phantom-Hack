@@ -1,5 +1,5 @@
 
-Website Link:
+Website Link:[ phantom-hack.vercel.app](https://phantom-hack.vercel.app/)
 
 
 # 🎃 Spooky Halloween Website 🎃
@@ -80,7 +80,9 @@ Feel free to explore the different spooky sections!
 
 ## Project Structure
 
-`halloween-spooky-website/
+plaintext
+Copy code
+halloween-spooky-website/
 ├── public/
 │   ├── index.html              # Main HTML file for the website
 │   └── favicon.ico             # Favicon for the website
@@ -88,13 +90,11 @@ Feel free to explore the different spooky sections!
 │   ├── assets/
 │   │   ├── images/
 │   │   │   ├── creepy-background.png  # Spooky background image
-│   │   │   └── background-image.png     # Image for the floating ghost
+│   │   │   └── floating-ghost.png     # Image for the floating ghost
 │   ├── components/
-|   |   |── Home.jsx
 │   │   └── MainPage.jsx         # Main page with React Spring Parallax and typewriter effect
 │   ├── styles/
 │   │   ├── components/
-|   |   |── |── Home.css
 │   │   │   └── MainPage.css     # CSS for the MainPage component
 │   │   └── mist.css             # CSS for mist effect
 │   │   └── global.css           # Global styles like fonts, colors, layout
